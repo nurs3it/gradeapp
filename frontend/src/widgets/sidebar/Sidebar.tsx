@@ -62,6 +62,7 @@ export function Sidebar({ collapsed = false, onCollapsedChange }: SidebarProps) 
     { path: '/admin/school-settings', labelKey: 'schools.settings', namespace: 'admin', icon: School, section: 'school', requiredPermissions: ['nav.school_settings'], roles: ['director'] },
     { path: '/admin/schedule', labelKey: 'schedule.title', namespace: 'admin', icon: Calendar, section: 'admin', requiredPermissions: ['nav.schedule_admin'], roles: ['superadmin', 'schooladmin', 'director', 'registrar', 'scheduler'] },
     { path: '/admin/import-export', labelKey: 'import_export.title', namespace: 'admin', icon: FileSpreadsheet, section: 'admin', requiredPermissions: ['nav.import_export'], roles: ['superadmin', 'schooladmin', 'director'] },
+    { path: '/admin/subjects', labelKey: 'subjects.title', namespace: 'admin', icon: BookOpen, section: 'admin', requiredPermissions: [], roles: ['superadmin', 'schooladmin', 'director'] },
     { path: '/admin/join-requests', labelKey: 'join_requests.title', namespace: 'admin', icon: UserPlus, section: 'admin', requiredPermissions: [], roles: ['schooladmin', 'director'] },
     { path: '/parent/overview', labelKey: 'overview.title', namespace: 'parent', icon: GraduationCap, section: 'parent', requiredPermissions: ['nav.parent_overview'], roles: ['parent'] },
     { path: '/certificates', labelKey: 'title', namespace: 'certificates', icon: Award, section: 'certificates', requiredPermissions: ['nav.certificates'], roles: ['superadmin', 'schooladmin', 'director', 'teacher'] },

@@ -31,6 +31,7 @@ const NAV_ITEMS: { path: string; labelKey: string; namespace: string; icon: Reac
   { path: '/admin/school-settings', labelKey: 'schools.settings', namespace: 'admin', icon: School, requiredPermissions: ['nav.school_settings'], roles: ['director'] },
   { path: '/admin/schedule', labelKey: 'schedule.title', namespace: 'admin', icon: Calendar, requiredPermissions: ['nav.schedule_admin'], roles: ['superadmin', 'schooladmin', 'director', 'registrar', 'scheduler'] },
   { path: '/admin/import-export', labelKey: 'import_export.title', namespace: 'admin', icon: FileSpreadsheet, requiredPermissions: ['nav.import_export'], roles: ['superadmin', 'schooladmin', 'director'] },
+  { path: '/admin/subjects', labelKey: 'subjects.title', namespace: 'admin', icon: BookOpen, requiredPermissions: [], roles: ['superadmin', 'schooladmin', 'director'] },
   { path: '/parent/overview', labelKey: 'overview.title', namespace: 'parent', icon: GraduationCap, requiredPermissions: ['nav.parent_overview'], roles: ['parent'] },
   { path: '/certificates', labelKey: 'title', namespace: 'certificates', icon: Award, requiredPermissions: ['nav.certificates'], roles: ['superadmin', 'schooladmin', 'director', 'teacher'] },
   { path: '/admin/permissions', labelKey: 'permissions.title', namespace: 'admin', icon: ShieldCheck, requiredPermissions: ['permissions.manage'], roles: ['superadmin'] },

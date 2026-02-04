@@ -3,20 +3,24 @@ from .models import Role
 
 
 class IsSuperAdmin(permissions.BasePermission):
-    """Permission check for SuperAdmin role."""
+    """Permission check for SuperAdmin role. Django is_superuser is treated as SuperAdmin."""
     
     def has_permission(self, request, view):
         if not request.user or not request.user.is_authenticated:
             return False
+        if getattr(request.user, 'is_superuser', False):
+            return True
         return request.user.has_role(Role.SUPERADMIN)
 
 
 class IsSchoolAdmin(permissions.BasePermission):
-    """Permission check for SchoolAdmin or Director role."""
+    """Permission check for SchoolAdmin or Director role. Django is_superuser is treated as SuperAdmin."""
     
     def has_permission(self, request, view):
         if not request.user or not request.user.is_authenticated:
             return False
+        if getattr(request.user, 'is_superuser', False):
+            return True
         return (
             request.user.has_role(Role.SCHOOLADMIN) or
             request.user.has_role(Role.DIRECTOR) or

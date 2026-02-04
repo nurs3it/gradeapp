@@ -16,6 +16,7 @@ import { AdminSchedulePage } from '@/pages/admin/SchedulePage'
 import { ImportExportPage } from '@/pages/admin/ImportExportPage'
 import { PermissionsPage } from '@/pages/admin/PermissionsPage'
 import { JoinRequestsPage } from '@/pages/admin/JoinRequestsPage'
+import { SubjectsPage } from '@/pages/admin/SubjectsPage'
 import { CertificatesPage } from '@/pages/certificates/CertificatesPage'
 import { ProfilePage } from '@/pages/profile/ProfilePage'
 import { useTranslationWithNamespace } from '@/shared/lib/i18n/hooks'
@@ -159,6 +160,14 @@ export function Router() {
         element={
           <ProtectedRoute>
             <ImportExportPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/subjects"
+        element={
+          <ProtectedRoute>
+            <SubjectsPage />
           </ProtectedRoute>
         }
       />
