@@ -2,7 +2,8 @@
 URL configuration for gradeapp_backend project.
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.generic import TemplateView
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularSwaggerView,
@@ -32,5 +33,9 @@ urlpatterns = [
     path('api/roles/', include('users.role_permission_urls')),
     path('api/school-join-requests/', include('users.join_request_urls')),
     path('api/notifications/', include('users.notifications_urls')),
+
+    # Frontend (SPA)
+    path('', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^(?!api/|admin/|static/|media/).*$', TemplateView.as_view(template_name='index.html')),
 ]
 
