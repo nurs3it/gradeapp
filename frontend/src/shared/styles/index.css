@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apple HIG–inspired: clarity, deference, depth. iOS/macOS/iPadOS feel. */
+@layer base {
+  :root {
+    /* Surfaces: light gray bg, white cards (iOS grouped / macOS windows) */
+    --background: 220 14% 96%;
+    --foreground: 220 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 10%;
+    /* System blue #007AFF */
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 10% 25%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 220 14% 94%;
+    --accent-foreground: 220 10% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 211 100% 50%;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --radius-lg: 16px;
+    --chart-1: 211 100% 50%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  .dark {
+    --background: 220 15% 11%;
+    --foreground: 220 10% 98%;
+    --card: 220 15% 14%;
+    --card-foreground: 220 10% 98%;
+    --popover: 220 15% 14%;
+    --popover-foreground: 220 10% 98%;
+    --primary: 211 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 220 10% 98%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 220 15% 20%;
+    --accent-foreground: 220 10% 98%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 22%;
+    --input: 220 15% 22%;
+    --ring: 211 100% 55%;
+    --chart-1: 211 100% 55%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  /* Coffee / reading theme: warm sepia, reduced contrast */
+  [data-theme="coffee"] {
+    --background: 30 25% 94%;
+    --foreground: 25 20% 20%;
+    --card: 35 30% 97%;
+    --card-foreground: 25 20% 20%;
+    --popover: 35 30% 97%;
+    --popover-foreground: 25 20% 20%;
+    --primary: 25 60% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 20% 90%;
+    --secondary-foreground: 25 20% 25%;
+    --muted: 30 20% 90%;
+    --muted-foreground: 25 15% 45%;
+    --accent: 30 25% 88%;
+    --accent-foreground: 25 20% 15%;
+    --destructive: 0 55% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 25 60% 40%;
+    --chart-1: 25 60% 40%;
+    --chart-2: 142 40% 40%;
+    --chart-3: 38 70% 45%;
+    --chart-4: 280 50% 50%;
+    --chart-5: 340 55% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Apple-style animations: subtle, short */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-in.slide-in-from-right {
+  animation: slide-in-from-right 0.35s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+/* Safe area for notched devices */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+}
