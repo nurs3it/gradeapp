@@ -1,0 +1,13 @@
+{
+  "title": "Profile",
+  "description": "Edit your personal data",
+  "first_name": "First name",
+  "last_name": "Last name",
+  "middle_name": "Middle name",
+  "email": "Email",
+  "phone": "Phone",
+  "language_pref": "Interface language",
+  "save": "Save",
+  "saved": "Profile saved",
+  "save_error": "Error saving profile"
+}

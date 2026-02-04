@@ -1,0 +1,13 @@
+{
+  "title": "Профиль",
+  "description": "Жеке деректерді өңдеу",
+  "first_name": "Аты",
+  "last_name": "Тегі",
+  "middle_name": "Әкесінің аты",
+  "email": "Email",
+  "phone": "Телефон",
+  "language_pref": "Интерфейс тілі",
+  "save": "Сақтау",
+  "saved": "Профиль сақталды",
+  "save_error": "Сақтау кезінде қате"
+}

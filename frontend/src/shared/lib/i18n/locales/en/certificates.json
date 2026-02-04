@@ -1,0 +1,33 @@
+{
+  "title": "Certificate Generator",
+  "description": "Create and download certificates for students",
+  "form": {
+    "title": "Create Certificate",
+    "select_class": "Select Class",
+    "select_class_placeholder": "Select class",
+    "select_student": "Select Student",
+    "select_student_placeholder": "Select student",
+    "select_template": "Select Template",
+    "select_template_placeholder": "Select template",
+    "title_field": "Certificate Title",
+    "title_placeholder": "e.g., Course Completion Certificate",
+    "issue_date": "Issue Date",
+    "language": "Language",
+    "preview": "Preview",
+    "generate": "Generate"
+  },
+  "certificates_list": "Student Certificates",
+  "preview": {
+    "title": "Certificate Preview",
+    "close": "Close",
+    "generate": "Generate PDF",
+    "empty": "Preview unavailable",
+    "empty_description": "Select a student and template to preview"
+  },
+  "default_title": "Certificate",
+  "download_error": "Download error",
+  "certificate_generated": "Certificate generated successfully",
+  "certificate_generate_error": "Error generating certificate",
+  "certificate_downloaded": "Certificate downloaded"
+}
+

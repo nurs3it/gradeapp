@@ -1,0 +1,15 @@
+{
+  "loading": "Loading...",
+  "logout": "Logout",
+  "user": "User",
+  "more": "More",
+  "sidebar": {
+    "main": "Main",
+    "teacher": "Teacher",
+    "school": "School",
+    "admin": "Admin",
+    "parent": "Parent",
+    "certificates": "Certificates",
+    "system": "System"
+  }
+}

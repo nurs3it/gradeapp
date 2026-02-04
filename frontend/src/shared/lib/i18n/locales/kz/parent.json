@@ -1,0 +1,25 @@
+{
+  "overview": {
+    "title": "Ата-анаға шолу",
+    "select_child": "Баланы таңдаңыз",
+    "select_child_placeholder": "Баланы таңдаңыз",
+    "no_children": "Сізде байланысты балалар жоқ",
+    "average_grade": "Орташа баға",
+    "total_grades": "Барлық бағалар",
+    "attendance_rate": "Қатысу",
+    "class": "Сынып",
+    "recent_grades": "Соңғы бағалар",
+    "recent_attendance": "Соңғы қатысу",
+    "course": "Пән",
+    "grade": "Баға",
+    "date": "Күні",
+    "comment": "Түсініктеме",
+    "status": "Мәртебе",
+    "present": "Қатысты",
+    "absent": "Қатыспады",
+    "late": "Кешікті",
+    "no_grades": "Бағалар жоқ",
+    "no_attendance": "Қатысу деректері жоқ"
+  }
+}
+

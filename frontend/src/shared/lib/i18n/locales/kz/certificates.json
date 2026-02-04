@@ -1,0 +1,33 @@
+{
+  "title": "Сертификат генераторы",
+  "description": "Студенттерге сертификаттарды құру және жүктеу",
+  "form": {
+    "title": "Сертификат құру",
+    "select_class": "Сыныпты таңдаңыз",
+    "select_class_placeholder": "Сыныпты таңдаңыз",
+    "select_student": "Студентті таңдаңыз",
+    "select_student_placeholder": "Студентті таңдаңыз",
+    "select_template": "Үлгіні таңдаңыз",
+    "select_template_placeholder": "Үлгіні таңдаңыз",
+    "title_field": "Сертификат атауы",
+    "title_placeholder": "Мысалы: Курсты аяқтау сертификаты",
+    "issue_date": "Берілген күні",
+    "language": "Тіл",
+    "preview": "Алдын ала қарау",
+    "generate": "Генерациялау"
+  },
+  "certificates_list": "Студент сертификаттары",
+  "preview": {
+    "title": "Сертификат алдын ала қарауы",
+    "close": "Жабу",
+    "generate": "PDF генерациялау",
+    "empty": "Алдын ала қарау қолжетімсіз",
+    "empty_description": "Алдын ала қарау үшін студентті және үлгіні таңдаңыз"
+  },
+  "default_title": "Сертификат",
+  "download_error": "Жүктеу кезінде қате",
+  "certificate_generated": "Сертификат сәтті құрылды",
+  "certificate_generate_error": "Сертификат құру кезінде қате",
+  "certificate_downloaded": "Сертификат жүктелді"
+}
+

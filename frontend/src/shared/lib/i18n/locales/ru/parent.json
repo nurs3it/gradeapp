@@ -1,0 +1,25 @@
+{
+  "overview": {
+    "title": "Обзор родителя",
+    "select_child": "Выберите ребенка",
+    "select_child_placeholder": "Выберите ребенка",
+    "no_children": "У вас нет привязанных детей",
+    "average_grade": "Средний балл",
+    "total_grades": "Всего оценок",
+    "attendance_rate": "Посещаемость",
+    "class": "Класс",
+    "recent_grades": "Последние оценки",
+    "recent_attendance": "Последняя посещаемость",
+    "course": "Предмет",
+    "grade": "Оценка",
+    "date": "Дата",
+    "comment": "Комментарий",
+    "status": "Статус",
+    "present": "Присутствовал",
+    "absent": "Отсутствовал",
+    "late": "Опоздал",
+    "no_grades": "Нет оценок",
+    "no_attendance": "Нет данных о посещаемости"
+  }
+}
+

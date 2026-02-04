@@ -1,0 +1,25 @@
+{
+  "overview": {
+    "title": "Parent Overview",
+    "select_child": "Select Child",
+    "select_child_placeholder": "Select child",
+    "no_children": "You have no linked children",
+    "average_grade": "Average Grade",
+    "total_grades": "Total Grades",
+    "attendance_rate": "Attendance Rate",
+    "class": "Class",
+    "recent_grades": "Recent Grades",
+    "recent_attendance": "Recent Attendance",
+    "course": "Course",
+    "grade": "Grade",
+    "date": "Date",
+    "comment": "Comment",
+    "status": "Status",
+    "present": "Present",
+    "absent": "Absent",
+    "late": "Late",
+    "no_grades": "No grades",
+    "no_attendance": "No attendance data"
+  }
+}
+

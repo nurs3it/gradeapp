@@ -1,0 +1,33 @@
+{
+  "title": "Генератор сертификатов",
+  "description": "Создайте и скачайте сертификаты для студентов",
+  "form": {
+    "title": "Создание сертификата",
+    "select_class": "Выберите класс",
+    "select_class_placeholder": "Выберите класс",
+    "select_student": "Выберите студента",
+    "select_student_placeholder": "Выберите студента",
+    "select_template": "Выберите шаблон",
+    "select_template_placeholder": "Выберите шаблон",
+    "title_field": "Название сертификата",
+    "title_placeholder": "Например: Сертификат об окончании курса",
+    "issue_date": "Дата выдачи",
+    "language": "Язык",
+    "preview": "Предпросмотр",
+    "generate": "Сгенерировать"
+  },
+  "certificates_list": "Сертификаты студента",
+  "preview": {
+    "title": "Предпросмотр сертификата",
+    "close": "Закрыть",
+    "generate": "Сгенерировать PDF",
+    "empty": "Предпросмотр недоступен",
+    "empty_description": "Выберите студента и шаблон для предпросмотра"
+  },
+  "default_title": "Сертификат",
+  "download_error": "Ошибка при скачивании",
+  "certificate_generated": "Сертификат успешно создан",
+  "certificate_generate_error": "Ошибка при создании сертификата",
+  "certificate_downloaded": "Сертификат скачан"
+}
+
