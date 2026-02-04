@@ -9,28 +9,21 @@
 ########################
 # Frontend build stage
 ########################
-FROM oven/bun:1.3.8 AS frontend-build
+FROM node:20-slim AS frontend-build
 
 WORKDIR /frontend
 
-COPY frontend/package.json frontend/bun.lockb* ./
-RUN bun install --frozen-lockfile
+RUN corepack enable
 
 COPY frontend/ ./
 
-# Render passes env at build-time for Vite; keep defaults if not set.
-ARG VITE_API_BASE_URL
-ARG VITE_TOLGEE_API_URL
-ARG VITE_TOLGEE_API_KEY
-
-ENV VITE_API_BASE_URL=${VITE_API_BASE_URL}
-ENV VITE_TOLGEE_API_URL=${VITE_TOLGEE_API_URL}
-ENV VITE_TOLGEE_API_KEY=${VITE_TOLGEE_API_KEY}
+# Install deps from root yarn.lock for consistency
+COPY yarn.lock /yarn.lock
+RUN yarn install --frozen-lockfile
 
 # NOTE: project "build" script runs `tsc && vite build` and currently fails on TS errors.
 # For Docker deploy we build the bundle with Vite directly.
-ENV DEBUG=vite:*
-RUN bun run vite build --debug --logLevel info
+RUN yarn run -C /frontend vite build
 
 
 ########################
