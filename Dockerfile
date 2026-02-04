@@ -29,7 +29,8 @@ ENV VITE_TOLGEE_API_KEY=${VITE_TOLGEE_API_KEY}
 
 # NOTE: project "build" script runs `tsc && vite build` and currently fails on TS errors.
 # For Docker deploy we build the bundle with Vite directly.
-RUN bun run vite build
+ENV DEBUG=vite:*
+RUN bun run vite build --debug --logLevel info
 
 
 ########################
