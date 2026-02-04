@@ -23,7 +23,7 @@ RUN yarn install --frozen-lockfile
 
 # NOTE: project "build" script runs `tsc && vite build` and currently fails on TS errors.
 # For Docker deploy we build the bundle with Vite directly.
-RUN yarn run -C /frontend vite build
+RUN yarn run vite build
 
 
 ########################
