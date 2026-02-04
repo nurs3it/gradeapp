@@ -9,7 +9,7 @@
 ########################
 # Frontend build stage
 ########################
-FROM oven/bun:1 AS frontend-build
+FROM oven/bun:1.3.8 AS frontend-build
 
 WORKDIR /frontend
 
